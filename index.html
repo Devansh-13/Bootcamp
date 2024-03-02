@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    
     <h2><strong>Devansh Kumar</strong>,a <em>developer</em></h2>
     <img height="200" src="./Devansh.jpeg">
     <section>
-        <p>very enthusiaistic and hard working with a interest <br>
-    in solving problems based on <Em>Data structures and algorithms</Em>  </p>
-    <pre>
-<a href="#projects">Projects</a>   <a href="#skills">Skills</a>    <a href="#semesters overview">Semester</a>    <a href="#video">Explorin</a> </pre>
+        <p>very enthusiaistic and hard working with an interest <br>
+    of solving problems based on <Em>Data structures and algorithms</Em>  </p>
+    <pre >
+<a href="#projects">Projects</a>   <a href="#skills">Skills</a>    <a href="#semesters overview">Semester</a>    <a href="#video">Explorin</a>    <a href="#form">Form</a></pre>
     <h2>Education</h2>
     <dl>
         <dt><b>Moradabad Institute of Technology</b></dt>
@@ -46,7 +48,7 @@
         </dl>
     </section>
     <section id="semesters overview">
-        <table >
+        <table border="1px"> 
             <caption><em>Semesters overview</em></caption>
             <tr>
                 <th>Semester</th>
@@ -70,7 +72,7 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td>Matds-VI,Operating systme,Microprocessor</td>
+                <td>Maths-VI,Operating systme,Microprocessor</td>
                 <td>8.38</td>
             </tr>
             <tr>
@@ -110,6 +112,95 @@
         <h2>Explorin</h2>
         <p>Trust....Faith....Hope....Family</p>
         <iframe width="517" height="291" src="https://www.youtube.com/embed/8k0DfbWf33Q" title="Introducing EXPLORIN INSTITUTE OF DREAMERS | Story of Explorin"></iframe>
+    </section>
+    <section id="form">
+        <h2 >Hey there! Wanna know more.....</h2>
+        <form action="./index.html" method="get">
+
+            <!-- fieldset is use d to grp same type of data together -->
+            <!-- legeng atg is used to provide a Title to oor rleated data -->
+
+            <fieldset required>
+                <legend>Personal Details</legend><br>
+                <label class="equal" for="f-name">Name</label>
+                <input
+                placeholder="Enter your Name"
+                id="f-name" 
+                type="text" 
+                name="name"  
+                autocomplete="disabled"
+                required
+                size="25"
+                 ><br><br>
+                <label class="equal" for="f-password">Password</label>
+                <input
+                placeholder="Enter your Password"
+                id="f-password" 
+                type="password" 
+                name="password"  autocomplete="disabled"
+                minlength="4"
+                title="can be digits of minimum length 4"
+                required
+                size="25" ><br><br>
+                <label class="equal" for="f-institute">Institute</label>
+                <input
+                placeholder="Enter your Institute Name"
+                id="f-institute" 
+                type="text" 
+                name="institute"  autocomplete="disabled"
+                required
+                size="25" ><br><br>
+                <label class="equal"
+                for="f-email">Email</label>
+                <input
+                placeholder="Enter your Email"
+                id="f-email" 
+                type="email" 
+                name="email"  autocomplete="disabled"
+                required
+                size="25" ><br><br>
+                 <!-- radio for single select & -->
+                <label class="equal" for="f-gen">Gender</label>
+                <input 
+                type="radio"
+                name="gender" 
+                id="f-male"
+                value="male" checked><label for="f-male" >Male</label>
+                <input 
+                type="radio"
+                name="gender" 
+                id="f-female"
+                value="female"><label for="f-female">Female</label><br><br>
+            </fieldset><br>
+
+            <!-- field of interests -->
+            
+            <!-- checkbox for multiselect --> 
+            <fieldset>
+                <legend>Others</legend>
+                <label class="equal" for="f-wd">Interests</label>
+                <input type="checkbox" name="interest" id="f-wd" value="WebD"><label for="f-wd">Web Develpoment</label>
+                <input type="checkbox" name="interest" id="f-dsa" value="dsa"><label for="f-dsa" >DSA</label>
+                <input type="checkbox" name="interest" id="f-cs" value="cs"><label for="f-cs">Cyber Security</label>
+                <input type="checkbox" name="interest" id="f-gr" value="graphics" disabled><label for="f-gr">Graphics</label>
+                <br><br>
+
+                <!-- select for multiple select use multiple attribute-->
+
+                <label class="equal1" for="f-topic">Choose favourite topic</label>
+                <select name="topic" id="f-topic" required >
+                    <option value="DP">Dynamic programming</option>
+                    <option value="array&string" selected>Arrays & strings</option>
+                    <option value="BS">Binary search</option>
+                    <option value="Tree">Tree</option>
+                    <option value="Linked List">Linked List</option>
+                    <option value="Stack&Queue">Stack & Queue</option>                
+                </select><br><br>
+                <label class="equal1" for="f-addr">Tell about yourself</label><br>
+                <textarea name="about" id="f-addr" rows="5" cols="45" placeholder="Type" autocomplete="disabled"></textarea><br><br>
+            </fieldset><br>
+            <input id="submit" type="submit" value="Send" id="f-submit">
+        </form>
     </section>
 
 </body>

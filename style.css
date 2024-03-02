@@ -1,0 +1,51 @@
+body h2{   /* using combinator  to select the second level heading */
+    color:dodgerblue;
+    background-color:antiquewhite;
+    margin: auto;  
+}
+body{
+    text-align:center ;
+    background-color:azure;
+    color: black;
+    border: 2px solid black;
+}
+form{
+    text-align: left;
+    color:black ;
+    background-color:antiquewhite;
+    width: 600px;
+    margin: 10px auto;
+}
+.equal{
+    /* background-color: aqua; */
+    display: inline-block;
+    width: 80px;
+    font-weight: 550;
+}
+.equal1{
+    /* for topic and message */
+    display: inline-block;
+    width: 170px;
+    font-weight: 550;
+}
+
+#submit {
+    position: relative;
+    left: 45%;
+   top:-10px;
+    color: white; 
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+table{
+    margin: auto;
+}
+ul{ /* to make the list in center display inline-block so no extra space  */
+    text-align: left;
+    display: inline-block;
+}
+
+
+
